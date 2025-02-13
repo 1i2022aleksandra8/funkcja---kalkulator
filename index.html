@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcje w JS</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Funkcje w JS</h1>
+        </header>
+        <main>
+            <script>
+               //Kalkulator gdzie użytkownik podaje 2 liczby i znak działania, wynik wynik wyświetlany na stronie.
+
+             const num1
+             const num2
+             const indicator
+             function  add(num1, num2){
+                 result = num1+num2
+                 document.write(`wynk dodawania wynosi: ${result}`)
+             }
+             function  sub(num1, num2){
+                 result = num1-num2
+                 document.write(`wynk odejmowania wynosi: ${result}`)
+             }
+             function  div(num1, num2){
+                 result = num1/num2
+                 document.write(`wynk dzielenia wynosi: ${result}`)
+             }
+             function  mult(num1, num2){
+                 result = num1/num2
+                 document.write(`wynk mnożenia wynosi: ${result}`)
+             }
+
+             function  calc(indicator){
+                 while (indicator != "+" || "-" || "*" || "/"){
+                     indicator = prompt("podaj znak działania (+, -, * lub /): ")
+                 }
+
+                 if (indicator == "+"){
+                     num1 = parseFloat(prompt("Podaj pierwzą liczbę"))
+                     num2 = parseFloat(prompt("Podaj drugą liczbę"))
+                     result = num1+num2
+                     document.write(`Wynik dodawania to: ${result}`)
+                 }
+
+                 else if (indicator == "-"){
+                     num1 = parseFloat(prompt("Podaj pierwzą liczbę"))
+                     num2 = parseFloat(prompt("Podaj drugą liczbę"))
+                     result = num1-num2
+                     document.write(`Wynik odejmowania to: ${result}`)
+                 }
+
+                 else if (indicator == "*"){
+                     num1 = parseFloat(prompt("Podaj pierwzą liczbę"))
+                     num2 = parseFloat(prompt("Podaj drugą liczbę"))
+                     result = num1*num2
+                     document.write(`Wynik mnozenia to: ${result}`)
+                 }
+
+                 else if (indicator == "/"){
+                     num1 = parseFloat(prompt("Podaj pierwzą liczbę"))
+                     num2 = parseFloat(prompt("Podaj drugą liczbę"))
+
+                     while (num2 == 0){
+                         num2 = parseFloat(prompt("Podaj drugą liczbę różną od zera"))
+                     }
+                     result = num1/num2
+                     document.write(`Wynik dzielenia to: ${result}`)
+                 }
+                 else {
+                     document.write(`Niepoprawne liczby`)
+                 }
+             }
+
+
+             calc(indicator)
+        
+
+            
+            
+            </script>
+        </main>
+        <footer>
+            <p>bbbbbbbbb</p>
+        </footer>
+    
+</body>
+</html>
