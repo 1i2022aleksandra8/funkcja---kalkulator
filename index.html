@@ -19,25 +19,10 @@
              var num2
              var indicator
              var result
-             function  add(num1, num2){
-                 result = num1+num2
-                 document.write(`wynk dodawania wynosi: ${result}`)
-             }
-             function  sub(num1, num2){
-                 result = num1-num2
-                 document.write(`wynk odejmowania wynosi: ${result}`)
-             }
-             function  div(num1, num2){
-                 result = num1/num2
-                 document.write(`wynk dzielenia wynosi: ${result}`)
-             }
-             function  mult(num1, num2){
-                 result = num1/num2
-                 document.write(`wynk mnożenia wynosi: ${result}`)
-             }
+             
 
              function  calc(indicator){
-                 while (indicator != "+" || "-" || "*" || "/"){
+                if (indicator != "+" || "-" || "*" || "/"){
                      indicator = prompt("podaj znak działania (+, -, * lub /): ")
                  }
 
